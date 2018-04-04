@@ -1,4 +1,4 @@
-define(function(require){
+define(['ionic'],function(){
    'use strict';
    var controllers = angular.module('starter.controllers',[])
    // controllers.controller('DashCtrl',require('DashCtrl'))

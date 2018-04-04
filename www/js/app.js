@@ -1,4 +1,4 @@
-define(['controllers','services'],function(){
+define(['ionic','controllers','services'],function(){
    'use strict';
    var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
    .run(function($ionicPlatform) {
