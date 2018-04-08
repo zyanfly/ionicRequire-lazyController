@@ -1,8 +1,9 @@
 define(['app'],function(app){
    'use strict';
    function ctrl($scope,Chats){
-      $scope.chats = Chats.all();
-      $scope.remove = function(chat) {
+      var vm = this;
+      vm.chats = Chats.all();
+      vm.remove = function(chat) {
          Chats.remove(chat);
       };
    }

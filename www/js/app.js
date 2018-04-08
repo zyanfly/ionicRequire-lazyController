@@ -51,6 +51,7 @@ define(['ionic','controllers','services'],function(){
             'tab-chats': {
                templateUrl: 'templates/tab-chats.html',
                controller: 'ChatsCtrl',
+               controllerAs:'vm',
                resolve:{
                   deps:app.loadControllerJs('ChatsCtrl')
                }
@@ -83,5 +84,6 @@ define(['ionic','controllers','services'],function(){
       });
       $urlRouterProvider.otherwise('/tab/dash');
    });
+   console.log(app)
    return app
 })
